@@ -80,6 +80,6 @@ server '13.232.18.189', user: 'deploy', roles: %w{web app db}, primary: true
 
 set :ssh_options, {
     keys: %w(/Users/shubhamjain/Downloads/shubham_temp2.pem),
-    forward_agent: false,
+    forward_agent: true,
     auth_methods: %w(publickey)
 }
