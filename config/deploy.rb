@@ -53,10 +53,10 @@ set :stage, :production
 set :pty, true
 
 # set :rvm_type, :user                     # Defaults to: :auto
-set :rvm_ruby_version, '2.2.1'      # Defaults to: 'default'
+# set :rvm_ruby_version, '2.2.1'      # Defaults to: 'default'
 
 # Default value for :linked_files is []
-set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/application.yml', 'config/puma.rb')
+set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/puma.rb')
 
 # Default value for linked_dirs is []
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
