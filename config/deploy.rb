@@ -81,9 +81,9 @@ set :puma_preload_app,    		true
 set :puma_worker_timeout,     nil
 set :puma_init_active_record, true
 
-set :whenever_environment, defer { stage }
-set :whenever_identifier, ->{ "#{fetch(:application)}_#{fetch(:stage)}" }
-set :whenever_command, 'bundle exec whenever'
+# set :whenever_environment, defer { stage }
+# set :whenever_identifier, ->{ "#{fetch(:application)}_#{fetch(:stage)}" }
+# set :whenever_command, 'bundle exec whenever'
 
 namespace :puma do
   desc 'Create Directories for Puma Pids and Socket'
@@ -94,7 +94,7 @@ namespace :puma do
     end
   end
 
-  before :start, :make_dirs
+  # before :start, :make_dirs
 end
 
 namespace :deploy do
