@@ -1,4 +1,3 @@
-# lock '3.11.2'
 #
 # set :application, 'chat_server'
 # set :repo_url, 'git@github.com:shubham2303/chat.git' # Edit this to match your repository
@@ -27,7 +26,7 @@
 # set :puma_preload_app, false
 #
 # config valid only for current version of Capistrano
-lock '3.4.0'
+lock '3.11.2'
 
 set :application, 'chat'
 set :repo_url, 'git@github.com:shubham2303/chat.git'
