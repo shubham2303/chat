@@ -30,7 +30,7 @@ lock '3.11.2'
 
 set :application, 'chat'
 set :repo_url, 'git@github.com:shubham2303/chat.git'
-set :deploy_to, "/home/deploy/#{fetch(:application)}"
+set :deploy_to, "/home/data/ubuntu/#{fetch(:application)}"
 
 # Default branch is :master
 ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
